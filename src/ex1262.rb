@@ -1,0 +1,17 @@
+# Sample code from Programing Ruby, page 587
+        a = "hello there"
+        a[1]
+        a[1,3]
+        a[1..3]
+        a[1...3]
+        a[-3,2]
+        a[-4..-2]
+        a[-2..-4]
+        a[/[aeiou](.)\1/]
+        a[/[aeiou](.)\1/, 0]
+        a[/[aeiou](.)\1/, 1]
+        a[/[aeiou](.)\1/, 2]
+        a[/(..)e/]
+        a[/(..)e/, 1]
+        a["lo"]
+        a["bye"]
