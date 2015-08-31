@@ -34,7 +34,7 @@ prepare:
 	rm -rf out/*
 
 out/%.o: src/%.rb
-	-$(TIMEOUT) $(TIMEOUT_OPTS) ruby $(RUBY_OPTS) $< < data/stdin_data.i 2>&1 > $@
+	-$(TIMEOUT) $(TIMEOUT_OPTS) ruby $(RUBY_OPTS) $< < data/stdin_data.i > $@ 2>&1
 
 clean:
 	rm -rf out application.log data.dbm.db data.dbm.dir data.dbm.pag \
