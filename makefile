@@ -18,7 +18,7 @@ ifeq "$(SYS)" "linux"
 TIMEOUT=timeout
 endif
 
-TIMEOUT_OPTS=--preserve-status --foreground --kill-after=6 5
+TIMEOUT_OPTS=--preserve-status --foreground --kill-after=2 3
 
 #debug:
 #	echo $(ALL_OUT)
