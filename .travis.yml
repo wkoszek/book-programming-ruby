@@ -5,11 +5,11 @@ addons:
       - coreutils
 rvm:
 - 2.0.0
-- 1.8.3
+- 1.8
 - 1.9.3
 - jruby-19mode
 - rbx-2
-environment:
+env:
 - MODE=
 - MODE=run
 script:
