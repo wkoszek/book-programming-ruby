@@ -37,4 +37,6 @@ out/%.o: src/%.rb
 	-$(TIMEOUT) $(TIMEOUT_OPTS) ruby $(RUBY_OPTS) $< < data/stdin_data.i 2>&1 > $@
 
 clean:
-	rm -rf out
+	rm -rf out application.log data.dbm.db data.dbm.dir data.dbm.pag \
+		f1 f2 mkmf.log out/ passwd.gz posterity \
+		temp.rb tree.yaml
