@@ -7,14 +7,18 @@ ALL_RBS=$(filter-out $(ALL_RBS_EXCLUDED), $(ALL_RBS_RAW))
 ALL_OUT_RAW=$(ALL_RBS:.rb=.o)
 ALL_OUT=$(subst src,out,$(ALL_OUT_RAW))
 
+ifeq "$(MODE)" "run"
+RUBY_OPTS=
+else
 RUBY_OPTS=-c	# syntax check only for now
+endif
 
 TIMEOUT=gtimeout
 ifeq "$(SYS)" "linux"
 TIMEOUT=timeout
 endif
 
-TIMEOUT_OPTS=5
+TIMEOUT_OPTS=--preserve-status --foreground --kill-after=6 5
 
 #debug:
 #	echo $(ALL_OUT)
@@ -29,7 +33,7 @@ prepare:
 	rm -rf out/*
 
 out/%.o: src/%.rb
-	$(TIMEOUT) $(TIMEOUT_OPTS) ruby $(RUBY_OPTS) $< 2>&1 > $@
+	-$(TIMEOUT) $(TIMEOUT_OPTS) ruby $(RUBY_OPTS) $< 2>&1 > $@
 
 clean:
 	rm -rf out
