@@ -9,8 +9,18 @@ ALL_OUT=$(subst src,out,$(ALL_OUT_RAW))
 
 RUBY_OPTS=-c	# syntax check only for now
 
+TIMEOUT=gtimeout
+ifeq "$(SYS)" "linux"
+TIMEOUT=timeout
+endif
+
+TIMEOUT_OPTS=5
+
 #debug:
 #	echo $(ALL_OUT)
+#	echo $(TIMEOUT)
+#	echo $(OS)
+#	echo $(SYS)
 
 all: prepare $(ALL_OUT)
 
@@ -19,7 +29,7 @@ prepare:
 	rm -rf out/*
 
 out/%.o: src/%.rb
-	ruby $(RUBY_OPTS) $< 2>&1 > $@
+	$(TIMEOUT) $(TIMEOUT_OPTS) ruby $(RUBY_OPTS) $< 2>&1 > $@
 
 clean:
 	rm -rf out
