@@ -21,7 +21,7 @@ else
 TIMEOUT=timeout
 endif
 
-TIMEOUT_OPTS=--preserve-status --foreground --kill-after=2 3
+TIMEOUT_OPTS=--foreground --kill-after=4 3
 
 #debug:
 #	echo $(ALL_OUT)
