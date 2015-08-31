@@ -1,4 +1,8 @@
 language: ruby
+addons:
+  apt:
+    packages:
+      - coreutils
 rvm:
 - 2.0.0
 - 1.9.3
