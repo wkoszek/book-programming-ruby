@@ -14,8 +14,10 @@ else
 RUBY_OPTS=-c	# syntax check only for now
 endif
 
+SYS:=$(shell uname -s)
+ifeq ($(SYS),Darwin)
 TIMEOUT=gtimeout
-ifeq "$(SYS)" "linux"
+else
 TIMEOUT=timeout
 endif
 
