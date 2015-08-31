@@ -9,4 +9,5 @@ rvm:
 - jruby-19mode
 - rbx-2
 script:
+- timeout --help
 - make
