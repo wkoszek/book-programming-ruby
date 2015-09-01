@@ -17,3 +17,4 @@ script:
 - printenv
 - script out.$(MODE) make
 - ./report.rb out.$(MODE)
+
