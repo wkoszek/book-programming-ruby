@@ -10,11 +10,11 @@ rvm:
 - jruby-19mode
 - rbx-2
 env:
-- MODE=
+- MODE=check
 - MODE=run
 script:
 #- timeout --help
 - printenv
-- script out.$(MODE) make
-- ./report.rb out.$(MODE)
+- script out.${MODE} make
+- ./report.rb out.${MODE}
 
