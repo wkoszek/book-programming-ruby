@@ -13,5 +13,7 @@ env:
 - MODE=
 - MODE=run
 script:
-- timeout --help
-- make
+#- timeout --help
+- printenv
+- script out.$(MODE) make
+- ./report.rb out.$(MODE)
