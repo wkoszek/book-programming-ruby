@@ -46,11 +46,11 @@ class Report
 	end
 
 	def ex_count_excluded
+		cnt_excluded = 0
 		Dir.foreach(".") do |file_name|
 			if not file_name =~ /makefile.ex*/ then
 				next
 			end
-			cnt_excluded = 0
 			f = File.new(file_name)
 			f.read().split("\n").each do |line|
 				if line =~ /EXCLUDED/ then
@@ -58,8 +58,8 @@ class Report
 				end
 			end
 			f.close()
-			return cnt_excluded
 		end
+		return cnt_excluded
 	end
 end
 
@@ -78,6 +78,8 @@ def main
 	print "Examples total   : %4d (%3.02f%%)\n" % [cnt_total, 100]
 	print "Examples run     : %4d (% 3.02f%%)\n" % [cnt_run, cnt_run_percent]
 	print "Examples excluded: %4d (% 3.02f%%)\n" % [cnt_excluded, cnt_excluded_percent]
+	print "Example run(%d) + excluded(%d) = %d (expected:%d)\n" %
+			[cnt_run, cnt_excluded, cnt_run + cnt_excluded, cnt_total]
 end
 
 main()
