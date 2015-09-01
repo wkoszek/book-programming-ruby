@@ -44,18 +44,38 @@ class Report
 		return total_examples
 	end
 
-	def ex_count_run
+	def ex_count_ok_and_errored
+		files_run = Hash.new
+		files_bad = Hash.new
 		total_run = 0
+
 		f = File.new(@file_name_in)
 		f.read().split("\n").each do |line|
 			if line =~ /^gtimeout/  or line =~ /^timeout/ then
-				self.dbg "#{line}\n"
-				total_run += 1
+				chunks = line.split(" ")
+				chunks.each do |chunk|
+					if not chunk =~ /^src/ then
+						next
+					else
+						print "good #{chunk}\n"
+						files_run[chunk] = 1
+						total_run += 1
+					end
+				end
 			end
+
 			#make: [out/ex0187.o] Error 1 (ignored)
+			if line =~ /^make: \[out\/(.*)\.o\] Error/ then
+				o_base_name = $1
+				files_bad["src/#{o_base_name}.rb"] = 0
+			end
 		end
 		f.close()
-		return total_run
+
+		ok_cnt = total_run - files_bad.length
+		bad_cnt = files_bad.length
+
+		return [ok_cnt, bad_cnt]
 	end
 
 	def ex_count_excluded
@@ -84,16 +104,18 @@ def main
 
 
 	cnt_total = r.ex_count_total()
-	cnt_run = r.ex_count_run()
+	cnt_run, cnt_bad = r.ex_count_ok_and_errored()
 	cnt_excluded = r.ex_count_excluded()
-	
+
 	cnt_run_percent = (cnt_run.to_f / cnt_total.to_f) * 100
 	cnt_excluded_percent = (cnt_excluded.to_f / cnt_total.to_f) * 100
+	cnt_bad_percent = (cnt_bad.to_f / cnt_total.to_f) * 100
 
 	print "--------  #{r.file_name_in} ----------\n"
 	print "Examples total   : %4d (%3.02f%%)\n" % [cnt_total, 100]
 	print "Examples run     : %4d (% 3.02f%%)\n" % [cnt_run, cnt_run_percent]
 	print "Examples excluded: %4d (% 3.02f%%)\n" % [cnt_excluded, cnt_excluded_percent]
+	print "Examples bad     : %4d (% 3.02f%%)\n" % [cnt_bad, cnt_bad_percent]
 	print "Example run(%d) + excluded(%d) = %d (expected:%d)\n" %
 			[cnt_run, cnt_excluded, cnt_run + cnt_excluded, cnt_total]
 end
