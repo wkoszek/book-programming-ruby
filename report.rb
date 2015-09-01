@@ -55,7 +55,7 @@ def main
 	cnt_run_percent = (cnt_run.to_f / cnt_total.to_f) * 100
 	print "--------------------------------\n"
 	print "Examples total: #{cnt_total} (100.00%)\n"
-	puts "Examples run  : #{cnt_run} ( %02.02f%%)\n" % cnt_run_percent
+	print "Examples run  : #{cnt_run} ( %02.02f%%)\n" % cnt_run_percent
 end
 
 main()
