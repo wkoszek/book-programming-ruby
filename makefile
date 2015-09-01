@@ -1,8 +1,8 @@
 # Copyright 2015 Wojciech A. Koszek <wojciech@koszek.com>
 ALL_RBS_RAW=$(wildcard src/*.rb)
 ALL_RBS_EXCLUDED=
-include mk.excludes.mk # will fill ALL_RBS_EXCLUDED. Lots of stuff there.
-include mk.excludes_err.mk # error out in one way or another
+include makefile.excludes # will fill ALL_RBS_EXCLUDED. Lots of stuff there.
+include makefile.excludes_err # error out in one way or another
 ALL_RBS=$(filter-out $(ALL_RBS_EXCLUDED), $(ALL_RBS_RAW))
 
 ALL_OUT_RAW=$(ALL_RBS:.rb=.o)
