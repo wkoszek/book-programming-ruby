@@ -15,6 +15,5 @@ env:
 script:
 #- timeout --help
 - printenv
-- script out.${MODE} make
+- script -c make out.${MODE}
 - ./report.rb out.${MODE}
-
