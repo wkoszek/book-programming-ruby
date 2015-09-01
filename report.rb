@@ -4,7 +4,10 @@
 class Report
 	def initialize
 		@debug = 0
-		@filename_out = false
+		@file_name_in = false
+	end
+	def file_name_in
+		@file_name_in
 	end
 
 	def dbg(*args)
@@ -22,6 +25,7 @@ class Report
 			end
 		end
 	end
+
 	def check_args
 		if not @file_name_in
 			print "usage!"
@@ -86,7 +90,7 @@ def main
 	cnt_run_percent = (cnt_run.to_f / cnt_total.to_f) * 100
 	cnt_excluded_percent = (cnt_excluded.to_f / cnt_total.to_f) * 100
 
-	print "--------------------------------\n"
+	print "--------  #{r.file_name_in} ----------\n"
 	print "Examples total   : %4d (%3.02f%%)\n" % [cnt_total, 100]
 	print "Examples run     : %4d (% 3.02f%%)\n" % [cnt_run, cnt_run_percent]
 	print "Examples excluded: %4d (% 3.02f%%)\n" % [cnt_excluded, cnt_excluded_percent]
