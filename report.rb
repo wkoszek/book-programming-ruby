@@ -44,6 +44,23 @@ class Report
 		f.close()
 		return total_run
 	end
+
+	def ex_count_excluded
+		Dir.foreach(".") do |file_name|
+			if not file_name =~ /makefile.ex*/ then
+				next
+			end
+			cnt_excluded = 0
+			f = File.new(file_name)
+			f.read().split("\n").each do |line|
+				if line =~ /EXCLUDED/ then
+					cnt_excluded += 1
+				end
+			end
+			f.close()
+			return cnt_excluded
+		end
+	end
 end
 
 def main
@@ -52,10 +69,15 @@ def main
 
 	cnt_total = r.ex_count_total()
 	cnt_run = r.ex_count_run()
+	cnt_excluded = r.ex_count_excluded()
+	
 	cnt_run_percent = (cnt_run.to_f / cnt_total.to_f) * 100
+	cnt_excluded_percent = (cnt_excluded.to_f / cnt_total.to_f) * 100
+
 	print "--------------------------------\n"
-	print "Examples total: #{cnt_total} (100.00%)\n"
-	print "Examples run  : #{cnt_run} ( %02.02f%%)\n" % cnt_run_percent
+	print "Examples total   : %4d (%3.02f%%)\n" % [cnt_total, 100]
+	print "Examples run     : %4d (% 3.02f%%)\n" % [cnt_run, cnt_run_percent]
+	print "Examples excluded: %4d (% 3.02f%%)\n" % [cnt_excluded, cnt_excluded_percent]
 end
 
 main()
