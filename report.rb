@@ -47,19 +47,20 @@ class Report
 
 	def ex_count_excluded
 		cnt_excluded = 0
+		excluded = Hash.new
 		Dir.foreach(".") do |file_name|
 			if not file_name =~ /makefile.ex*/ then
 				next
 			end
 			f = File.new(file_name)
 			f.read().split("\n").each do |line|
-				if line =~ /EXCLUDED/ then
-					cnt_excluded += 1
-				end
+				chunks = line.split(" ")
+				stmt_with_excluded = chunks[0]
+				excluded[stmt_with_excluded] = stmt_with_excluded
 			end
 			f.close()
 		end
-		return cnt_excluded
+		return excluded.length
 	end
 end
 
