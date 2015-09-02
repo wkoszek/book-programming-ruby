@@ -111,13 +111,12 @@ def main
 	cnt_excluded_percent = (cnt_excluded.to_f / cnt_total.to_f) * 100
 	cnt_bad_percent = (cnt_bad.to_f / cnt_total.to_f) * 100
 
-	print "--------  #{r.file_name_in} ----------\n"
-	print "Examples total   : %4d (%3.02f%%)\n" % [cnt_total, 100]
-	print "Examples run     : %4d (% 3.02f%%)\n" % [cnt_run, cnt_run_percent]
-	print "Examples excluded: %4d (% 3.02f%%)\n" % [cnt_excluded, cnt_excluded_percent]
-	print "Examples bad     : %4d (% 3.02f%%)\n" % [cnt_bad, cnt_bad_percent]
-	print "Example run(%d) + excluded(%d) = %d (expected:%d)\n" %
-			[cnt_run, cnt_excluded, cnt_run + cnt_excluded, cnt_total]
+	print "-------------  #{r.file_name_in} ---------------\n"
+	print "T. Examples total   :   %4d (%7.2f%%)\n" % [cnt_total, 100]
+	print "1. Examples run     :   %4d (%7.2f%%)\n" % [cnt_run, cnt_run_percent]
+	print "2. Examples excluded: + %4d (%7.2f%%)\n" % [cnt_excluded, cnt_excluded_percent]
+	print "3. Examples bad     : + %4d (%7.2f%%)\n" % [cnt_bad, cnt_bad_percent]
+	print "                      = %4d (should match total [T])\n" % (cnt_run + cnt_excluded + cnt_bad)
 end
 
 main()
