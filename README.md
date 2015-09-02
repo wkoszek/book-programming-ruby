@@ -30,3 +30,8 @@ will be populated with all sorts of output files.
 
 Because some scripts expect to read stuff from the standard output, I made
 all scripts to get input from `data/stdin_data.i` for convenience.
+
+# Copyright
+
+Look at `COPYRIGHT.src.md` for `src/` copyright. Everything else is BSDv2
+license.
