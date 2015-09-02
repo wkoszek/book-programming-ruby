@@ -57,7 +57,7 @@ class Report
 					if not chunk =~ /^src/ then
 						next
 					else
-						print "good #{chunk}\n"
+						self.dbg "good #{chunk}\n"
 						files_run[chunk] = 1
 						total_run += 1
 					end
