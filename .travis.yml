@@ -10,8 +10,11 @@ rvm:
 - jruby-19mode
 - rbx-2
 env:
-- MODE=check
-- MODE=run
+  global:
+    - NO_EXCLUDE=yes
+  matrix:
+    - MODE=check
+    - MODE=run
 script:
 #- timeout --help
 - printenv
