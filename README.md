@@ -4,15 +4,17 @@
 
 <a href="http://www.amazon.com/gp/product/1937785491/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1937785491&linkCode=as2&tag=wojcadamkoszh-20&linkId=PHNJA5PM4PDXU2BF"><img border="0" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1937785491&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=wojcadamkoszh-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=wojcadamkoszh-20&l=as2&o=1&a=1937785491" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
-This is a collection of Ruby scripts from the "Programming Ruby" book.
-This might be the single biggest collection of Ruby scripts around. Each
-script seems to be self-contained, and is thus good for testing and
-education.
+This is a collection of Ruby scripts from the "Programming Ruby" book.  This
+might be the single biggest collection of Ruby scripts around, since it's
+1600+ scripts in one archive. Each script seems to be self-contained, and is
+thus good for testing and education. Some of them try to run Tk programs, so
+not everything is runnable on server such as Travis without taking more
+effort (submit patches for headless X11!)
 
 I have written a simple infrastructure for running all of the tests
-together, as an experiment with Ruby. I wanted to use the scripts to see how
-much stuff I can run in Ruby's 1.8, 1.9, 2.x as well as to see whether
-differences between Ruby and Rubinius exist.
+together, as an experiment with Ruby and Travis. I wanted to use the scripts
+to see how much stuff I can run in Ruby's 1.8, 1.9, 2.x as well as to see
+whether differences between Ruby and Rubinius exist.
 
 # How to run
 
