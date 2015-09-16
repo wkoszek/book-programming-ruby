@@ -1,3 +1,0 @@
-src/ex0534.rb:2: syntax error, unexpected =>, expecting end-of-input
-123456                   => 123456   # Fixnum
-                           ^

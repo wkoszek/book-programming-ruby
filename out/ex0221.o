@@ -1,6 +1,0 @@
-src/ex0221.rb:4: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
-if song.artist == "Gillespie":  handle = "Dizzy"
-                              ^
-src/ex0221.rb:5: syntax error, unexpected keyword_elsif, expecting end-of-input
-elsif song.artist == "Parker":  handle = "Bird"
-     ^

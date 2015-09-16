@@ -1,6 +1,0 @@
-src/ex0477.rb:2: syntax error, unexpected '=', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
-  Song title := 'Get It On':      rem Visual Basic
-               ^
-src/ex0477.rb:2: syntax error, unexpected ':', expecting end-of-input
-  Song title := 'Get It On':      rem Visual Basic
-                            ^

@@ -1,6 +1,0 @@
-src/ex0467.rb:2: syntax error, unexpected tLABEL
-  Perl/Tk:  $widget = $parent->Widget( [ option => value ] )
-          ^
-src/ex0467.rb:2: syntax error, unexpected ->, expecting end-of-input
-  Perl/Tk:  $widget = $parent->Widget( [ option => value ] )
-                               ^

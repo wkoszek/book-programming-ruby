@@ -1,8 +1,0 @@
-src/ex0609.rb:6: syntax error, unexpected '}'
-src/ex0609.rb:11: syntax error, unexpected ...
-  public long getID() { ... }
-                           ^
-src/ex0609.rb:12: syntax error, unexpected ...
-  public Calendar getDateOfLastContact() { ... }
-                                              ^
-src/ex0609.rb:14: syntax error, unexpected '}'

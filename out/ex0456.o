@@ -1,3 +1,0 @@
-src/ex0456.rb:9: syntax error, unexpected ..., expecting ')'
-  TkLabel.new(parent_widget, 'text' => 'Hello, World!').pack(...)
-                                                                ^

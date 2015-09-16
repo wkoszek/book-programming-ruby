@@ -1,3 +1,0 @@
-src/ex0504.rb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
-static VALUE cd_init_copy(VALUE copy, VALUE orig) {
-                                                ^

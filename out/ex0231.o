@@ -1,6 +1,0 @@
-src/ex0231.rb:4: syntax error, unexpected ':', expecting keyword_then or ',' or ';' or '\n'
-         when 1850..1889: "Blues"
-                         ^
-src/ex0231.rb:5: syntax error, unexpected keyword_when, expecting end-of-input
-         when 1890..1909: "Ragtime"
-             ^

@@ -1,6 +1,0 @@
-src/ex0584.rb:32: syntax error, unexpected *, expecting ')'
-  all('test', 1 => 'cat', 2 => 'dog', *an_array, &a_proc)
-                                       ^
-src/ex0584.rb:32: syntax error, unexpected &
-  all('test', 1 => 'cat', 2 => 'dog', *an_array, &a_proc)
-                                                  ^

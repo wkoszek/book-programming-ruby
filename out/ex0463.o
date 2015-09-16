@@ -1,4 +1,0 @@
-src/ex0463.rb:2: syntax error, unexpected ',', expecting ')'
-  canvas.bind("Motion", lambda {|x, y| do_motion (x, y)}, "%x %y")
-                                                    ^
-src/ex0463.rb:2: syntax error, unexpected ')', expecting '}'

@@ -1,4 +1,0 @@
-src/ex0487.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
-  VALUE arr;
-           ^
-src/ex0487.rb:13: syntax error, unexpected '}', expecting end-of-input

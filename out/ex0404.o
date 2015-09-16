@@ -1,3 +1,0 @@
-src/ex0404.rb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
-% rdoc --ri  file1.rb file2.rb
-                  ^

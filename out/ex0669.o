@@ -1,9 +1,0 @@
-src/ex0669.rb:4: syntax error, unexpected *, expecting ')'
-    void (*fptr)();
-           ^
-src/ex0669.rb:8: syntax error, unexpected ',', expecting =>
-    { "play",   fptr_play },
-             ^
-src/ex0669.rb:9: syntax error, unexpected ',', expecting =>
-    { "stop",   fptr_stop },
-             ^

@@ -1,4 +1,0 @@
-src/ex0398.rb:5: target of repeat operator is not specified: /*
- * call-seq:
- *   cipher.keylen   -> Fixnum or nil
- */

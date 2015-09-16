@@ -1,3 +1,0 @@
-src/ex0228.rb:4: syntax error, unexpected ':', expecting keyword_then or ',' or ';' or '\n'
-       when year % 400 == 0: true
-                            ^

@@ -1,3 +1,0 @@
-src/ex0065.rb:2: syntax error, unexpected ..., expecting ')'
-  song = Song.new(....)
-                     ^

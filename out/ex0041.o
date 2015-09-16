@@ -1,4 +1,0 @@
-src/ex0041.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
-    for each element    # <-- not valid Ruby
-                    ^
-src/ex0041.rb:7: syntax error, unexpected keyword_end, expecting end-of-input

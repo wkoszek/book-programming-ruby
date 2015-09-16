@@ -1,3 +1,0 @@
-src/ex0524.rb:3: syntax error, unexpected ',', expecting ')'
-    NtInitialize(&argc, &argv);
-                       ^

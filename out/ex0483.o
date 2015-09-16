@@ -1,3 +1,0 @@
-src/ex0483.rb:2: syntax error, unexpected $undefined, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
-C:\> ruby olegen.rb 'NetMeeting 1.1 Type Library' >netmeeting.rb
-   ^

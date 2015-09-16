@@ -1,8 +1,0 @@
-src/ex0525.rb:2: unknown regexp options - dav
-src/ex0525.rb:2: no .<digit> floating literal anymore; put 0 before dot
-WHERE=/Users/dave/ruby1.8/lib/ruby/1.8/powerpc-darwin/
-                        ^
-src/ex0525.rb:2: syntax error, unexpected tINTEGER, expecting '('
-WHERE=/Users/dave/ruby1.8/lib/ruby/1.8/powerpc-darwin/
-                         ^
-src/ex0525.rb:3: `$(' is not allowed as a global variable name

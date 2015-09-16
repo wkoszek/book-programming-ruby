@@ -1,7 +1,0 @@
-src/ex1402.rb:10: syntax error, unexpected ':', expecting keyword_then or ',' or ';' or '\n'
-  when "sample":  # ...
-                ^
-src/ex1402.rb:11: syntax error, unexpected ':', expecting keyword_end
-  when "send":    # ...
-              ^
-src/ex1402.rb:16: syntax error, unexpected keyword_end, expecting end-of-input

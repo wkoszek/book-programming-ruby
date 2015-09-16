@@ -1,6 +1,0 @@
-src/ex0036.rb:2: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
-  { puts "Hello" }       # this is a block
-          ^
-src/ex0036.rb:2: syntax error, unexpected '}', expecting end-of-input
-  { puts "Hello" }       # this is a block
-                  ^

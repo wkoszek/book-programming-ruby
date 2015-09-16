@@ -1,3 +1,0 @@
-src/ex0516.rb:2: syntax error, unexpected tIDENTIFIER, expecting end-of-input
-  % ruby extconf.rb --with-cdjukebox-dir=/usr/local/cdjb
-                ^

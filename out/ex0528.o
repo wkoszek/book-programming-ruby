@@ -1,3 +1,0 @@
-src/ex0528.rb:3: syntax error, unexpected ',', expecting ')'
-rb_scan_args(argc, argv, "12", &name, &one, &two);
-                                     ^

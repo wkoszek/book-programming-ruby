@@ -1,6 +1,0 @@
-src/ex0500.rb:6: syntax error, unexpected tCONSTANT, expecting '}'
-  // Vendor library creates the Jukebox
-           ^
-src/ex0500.rb:9: syntax error, unexpected keyword_then, expecting '}'
-  // then we wrap it inside a Ruby CDPlayer object
-         ^

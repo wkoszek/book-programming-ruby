@@ -1,3 +1,0 @@
-src/ex0370.rb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
-% irb -r irb/completion
-            ^

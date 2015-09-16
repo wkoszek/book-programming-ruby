@@ -1,3 +1,0 @@
-src/ex0606.rb:2: syntax error, unexpected keyword_rescue
-rescue Exception => e
-      ^
