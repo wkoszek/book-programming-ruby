@@ -15,9 +15,10 @@ ssh-add book-programming-ruby.key
 
 git clone git@github.com:wkoszek/book-programming-ruby.git
 cd book-programming-ruby
-
 git checkout -B gh-pages
-mv ../out.${MODE} out.${MODE}.${TRAVIS_BUILD_NUMBER}
-git add out.${MODE}.${TRAVIS_BUILD_NUMBER}
+
+mkdir -p results
+mv ../out.${MODE} results/${TRAVIS_BUILD_NUMBER}.out.${MODE}
+git add results/${TRAVIS_BUILD_NUMBER}.out.${MODE}
 git commit -m "Travis out.${MODE} build ${TRAVIS_BUILD_NUMBER}"
 #git push
