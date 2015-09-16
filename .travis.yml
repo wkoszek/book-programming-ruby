@@ -2,7 +2,7 @@ language: ruby
 addons:
   apt:
     packages:
-      - coreutils
+    - coreutils
 rvm:
 - 2.0.0
 - 1.8
@@ -11,12 +11,13 @@ rvm:
 - rbx-2
 env:
   global:
-    - NO_EXCLUDE=yes
+  - NO_EXCLUDE=yes
   matrix:
-    - MODE=check
-    - MODE=run
+  - MODE=check
+  - MODE=run
 script:
-#- timeout --help
 - printenv
 - script -c make out.${MODE}
 - ./report.rb out.${MODE}
+after_script:
+- scripts/submit.sh
