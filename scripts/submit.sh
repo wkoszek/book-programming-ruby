@@ -22,4 +22,5 @@ mkdir -p results
 mv ../out.${MODE} results/${TRAVIS_BUILD_NUMBER}.out.${MODE}
 git add results/${TRAVIS_BUILD_NUMBER}.out.${MODE}
 git commit -m "Travis out.${MODE} build ${TRAVIS_BUILD_NUMBER}"
-git push origin master
+#git remote add origin https://github.com/wkoszek/book-programming-ruby
+git push --all # origin master
