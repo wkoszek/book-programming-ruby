@@ -37,3 +37,7 @@ all scripts to get input from `data/stdin_data.i` for convenience.
 
 Look at `COPYRIGHT.src.md` for `src/` copyright. Everything else is BSDv2
 license.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/wkoszek/book-programming-ruby/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
