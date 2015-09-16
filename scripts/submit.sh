@@ -1,4 +1,4 @@
-#!/usr/bin/env ssh-agent /bin/sh
+#!/usr/bin/ssh-agent /bin/sh
 
 set -x
 
