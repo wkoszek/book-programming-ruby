@@ -1,9 +1,14 @@
 #!/bin/sh
 
+set -x
+
 git config --global user.email "wojciech@koszek.com"
 git config --global user.name "Wojciech A. Koszek, T"
 
+pwd
 git clone https://github.com/wkoszek/travis_deploy.git
+ls -la
+ls -la travis_deploy
 openssl aes-256-cbc -K $encrypted_a95d9d0517a4_key -iv $encrypted_a95d9d0517a4_iv -in travis_deploy/book-programming-ruby.enc -out book-programming-ruby.key -d
 ssh-add book-programming-ruby.key
 
