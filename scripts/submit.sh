@@ -17,6 +17,7 @@ ssh-add book-programming-ruby.key
 git clone git@github.com:wkoszek/book-programming-ruby.git
 cd book-programming-ruby
 git checkout -B gh-pages
+git pull
 
 mkdir -p results
 mv ../out.${MODE} results/${TRAVIS_BUILD_NUMBER}.out.${MODE}
