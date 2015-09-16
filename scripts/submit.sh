@@ -7,6 +7,6 @@ git clone git@github.com:wkoszek/book-programming-ruby.git
 cd book-programming-ruby
 git co gh-pages
 mv ../out.${MODE} out.${MODE}.${TRAVIS_BUILD_NUMBER}
-git add *
+git add out.${MODE}.${TRAVIS_BUILD_NUMBER}
 git commit -m "Travis out.${MODE} build ${TRAVIS_BUILD_NUMBER}"
 git push
