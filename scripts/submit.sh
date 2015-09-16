@@ -4,6 +4,7 @@ set -x
 
 git config --global user.email "wojciech@koszek.com"
 git config --global user.name "Wojciech A. Koszek, T"
+git config --global push.default matching
 
 pwd
 git clone https://github.com/wkoszek/travis_deploy.git
