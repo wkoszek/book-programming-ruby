@@ -1,0 +1,16 @@
+src/ex0460.rb:11: syntax error, unexpected ':', expecting keyword_then or ',' or ';' or '\n'
+when 'text': 'OK'
+            ^
+src/ex0460.rb:12: syntax error, unexpected keyword_when, expecting keyword_end
+when 'justify': 'left'
+    ^
+src/ex0460.rb:12: syntax error, unexpected ':', expecting keyword_end
+when 'justify': 'left'
+               ^
+src/ex0460.rb:13: syntax error, unexpected keyword_when, expecting keyword_end
+when 'border': 5
+    ^
+src/ex0460.rb:13: syntax error, unexpected ':', expecting keyword_end
+when 'border': 5
+              ^
+src/ex0460.rb:15: syntax error, unexpected keyword_end, expecting end-of-input

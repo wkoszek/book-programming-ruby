@@ -1,0 +1,3 @@
+src/ex0502.rb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+static VALUE cd_initialize(VALUE self, VALUE unit) {
+                                                 ^

@@ -1,0 +1,22 @@
+src/ex0401.rb:6: syntax error, unexpected ...
+static void cd_free(void *p) { ... }
+                                  ^
+src/ex0401.rb:7: syntax error, unexpected ...
+static VALUE cd_alloc(VALUE klass) { ... }
+                                        ^
+src/ex0401.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+static void progress(CDJukebox *rec, int percent) { ... }
+                                                ^
+src/ex0401.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+static VALUE cd_initialize(VALUE self, VALUE unit) {
+                                                 ^
+src/ex0401.rb:35: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+cd_seek(VALUE self, VALUE disc, VALUE track) {
+                              ^
+src/ex0401.rb:35: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+cd_seek(VALUE self, VALUE disc, VALUE track) {
+                                           ^
+src/ex0401.rb:51: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  double tm;
+           ^
+src/ex0401.rb:56: syntax error, unexpected '}', expecting end-of-input

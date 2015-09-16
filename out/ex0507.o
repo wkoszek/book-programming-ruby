@@ -1,0 +1,5 @@
+src/ex0507.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+    VALUE prog = 0;
+              ^
+src/ex0507.rb:10: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+src/ex0507.rb:12: syntax error, unexpected '}', expecting end-of-input

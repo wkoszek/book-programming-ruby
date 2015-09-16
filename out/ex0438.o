@@ -1,0 +1,4 @@
+src/ex0438.rb:3: syntax error, unexpected tREGEXP_BEG, expecting keyword_do or '{' or '('
+    Action application/x-httpd-eruby /cgi-bin/eruby
+                                      ^
+src/ex0438.rb:3: unknown regexp options - rby

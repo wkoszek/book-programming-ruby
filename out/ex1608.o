@@ -1,0 +1,3 @@
+src/ex1608.rb:2: syntax error, unexpected tCONSTANT, expecting end-of-input
+    % export CONFIGURE_ARGS="ruby=ruby18 --enable-extras"
+                           ^

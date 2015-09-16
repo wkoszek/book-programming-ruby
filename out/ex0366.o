@@ -1,0 +1,3 @@
+src/ex0366.rb:2: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  % ruby -e 'puts $:'
+             ^

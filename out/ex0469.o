@@ -1,0 +1,3 @@
+src/ex0469.rb:2: syntax error, unexpected tLABEL
+  Perl/Tk:  -textvariable => \$variable
+          ^

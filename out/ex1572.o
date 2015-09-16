@@ -1,0 +1,3 @@
+src/ex1572.rb:2: syntax error, unexpected unary-, expecting keyword_do or '{' or '('
+% ruby -run -e help
+             ^

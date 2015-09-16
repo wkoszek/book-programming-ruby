@@ -1,0 +1,12 @@
+src/ex0567.rb:4: formal argument cannot be a global variable
+  a.each {|$i| puts $i }  # assigns to global $i
+             ^
+src/ex0567.rb:5: formal argument cannot be an instance variable
+  a.each {|@i| puts @i }  # assigns to instance variable @i
+             ^
+src/ex0567.rb:6: formal argument cannot be a constant
+  a.each {|I|  puts I  }  # generates warning assigning to constant
+            ^
+src/ex0567.rb:7: syntax error, unexpected '.', expecting '|'
+  a.each {|b.meth| }      # invokes meth= in object b
+             ^

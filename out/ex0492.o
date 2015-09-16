@@ -1,0 +1,6 @@
+src/ex0492.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_then or ';' or '\n'
+      if (TYPE(x) != T_STRING) x = rb_str_to_str(x);  \
+                                ^
+src/ex0492.rb:5: syntax error, unexpected tSTRING_DEND, expecting end-of-input
+    } while (0)
+     ^

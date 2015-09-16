@@ -1,0 +1,6 @@
+src/ex1585.rb:3: syntax error, unexpected tLABEL
+username: dave
+         ^
+src/ex1585.rb:4: syntax error, unexpected ':', expecting end-of-input
+prefs: 
+      ^

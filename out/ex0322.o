@@ -1,0 +1,3 @@
+src/ex0322.rb:3: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+  add 1 to val
+          ^

@@ -1,0 +1,9 @@
+src/ex0529.rb:2: syntax error, unexpected *, expecting keyword_do or '{' or '('
+VALUE getter(ID id, VALUE *data,
+                           ^
+src/ex0529.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+             struct global_entry *entry);
+                                ^
+src/ex0529.rb:3: syntax error, unexpected ')', expecting end-of-input
+             struct global_entry *entry);
+                                        ^

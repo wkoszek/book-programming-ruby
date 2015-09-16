@@ -1,0 +1,9 @@
+src/ex0503.rb:3: syntax error, unexpected tIDENTIFIER, expecting '}'
+  // same as before
+         ^
+src/ex0503.rb:6: syntax error, unexpected *, expecting keyword_do or '{' or '('
+static VALUE cd_new(int argc, VALUE *argv, VALUE klass) {
+                                     ^
+src/ex0503.rb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+static VALUE cd_new(int argc, VALUE *argv, VALUE klass) {
+                                                      ^

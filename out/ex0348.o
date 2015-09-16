@@ -1,0 +1,4 @@
+src/ex0348.rb:2: unknown regexp options - tt
+src/ex0348.rb:2: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+% ruby ../test/test_roman.rb
+                         ^

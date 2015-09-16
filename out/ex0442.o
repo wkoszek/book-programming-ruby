@@ -1,0 +1,16 @@
+src/ex0442.rb:2: syntax error, unexpected '<'
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+ ^
+src/ex0442.rb:3: syntax error, unexpected '<'
+<html>
+ ^
+src/ex0442.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+<title>eruby example</title>
+                    ^
+src/ex0442.rb:6: unknown regexp options - had
+src/ex0442.rb:7: syntax error, unexpected '<'
+<body>
+ ^
+src/ex0442.rb:11: unknown regexp option - l
+src/ex0442.rb:12: unknown type of %string
+src/ex0442.rb:12: syntax error, unexpected end-of-input

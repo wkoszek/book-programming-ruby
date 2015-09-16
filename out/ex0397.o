@@ -1,0 +1,9 @@
+src/ex0397.rb:9: target of repeat operator is not specified: /*
+ * call-seq:
+ *   cipher.salt = number
+ *   cipher.salt = "string"
+ *
+ * Sets the salt of this cipher to either a binary +number+ or
+ * bits in +string+.
+ */
+src/ex0397.rb:13: syntax error, unexpected ..., expecting end-of-input

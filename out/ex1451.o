@@ -1,0 +1,13 @@
+src/ex1451.rb:6: syntax error, unexpected ':', expecting keyword_then or ',' or ';' or '\n'
+               when File.file?(f): "F"
+                                  ^
+src/ex1451.rb:7: syntax error, unexpected keyword_when, expecting keyword_end
+               when File.directory?(f): "D"
+                   ^
+src/ex1451.rb:7: syntax error, unexpected ':', expecting keyword_end
+               when File.directory?(f): "D"
+                                       ^
+src/ex1451.rb:8: syntax error, unexpected keyword_else, expecting keyword_end
+               else "?"
+                   ^
+src/ex1451.rb:12: syntax error, unexpected keyword_end, expecting end-of-input

@@ -1,0 +1,4 @@
+src/ex0493.rb:5: syntax error, unexpected ..., expecting ')'
+  rb_define_class(....);
+                     ^
+src/ex0493.rb:9: syntax error, unexpected ..., expecting '}'

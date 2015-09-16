@@ -1,0 +1,11 @@
+src/ex0509.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+    VALUE v;
+           ^
+src/ex0509.rb:11: syntax error, unexpected keyword_return, expecting keyword_then or ';' or '\n'
+    if (TYPE(val) == type && type != T_DATA) return val;
+                                                   ^
+src/ex0509.rb:13: syntax error, unexpected keyword_return, expecting keyword_then or ';' or '\n'
+    if (NIL_P(v)) return Qnil;
+                        ^
+src/ex0509.rb:14: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+src/ex0509.rb:17: syntax error, unexpected '}', expecting end-of-input

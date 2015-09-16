@@ -1,0 +1,3 @@
+src/ex0476.rb:2: syntax error, unexpected ':', expecting end-of-input
+  Song(artist, title, length):    rem Visual Basic
+                              ^

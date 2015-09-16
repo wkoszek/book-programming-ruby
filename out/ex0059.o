@@ -1,0 +1,7 @@
+src/ex0059.rb:2: syntax error, unexpected tCONSTANT, expecting '}'
+  class JavaSong {                     // Java code
+                                              ^
+src/ex0059.rb:7: syntax error, unexpected '\n', expecting :: or '[' or '.'
+src/ex0059.rb:8: syntax error, unexpected ..., expecting ')'
+  s = new Song(....);
+                  ^

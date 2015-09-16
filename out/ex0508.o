@@ -1,0 +1,7 @@
+src/ex0508.rb:6: void value expression
+    return rb_check_convert_type(ary, T_ARRAY, "Array", "to_ary");
+                                ^
+src/ex0508.rb:6: syntax error, unexpected tIDENTIFIER, expecting =>
+    return rb_check_convert_type(ary, T_ARRAY, "Array", "to_ary");
+                                ^
+src/ex0508.rb:7: syntax error, unexpected '}', expecting end-of-input
