@@ -26,5 +26,5 @@ git checkout -B gh-pages
 mkdir -p results
 mv ../out.${MODE} results/${TRAVIS_BUILD_NUMBER}.out.${MODE}
 git add results/${TRAVIS_BUILD_NUMBER}.out.${MODE}
-git commit -m "Travis out.${MODE} build ${TRAVIS_BUILD_NUMBER}"
+git commit -m ddddd
 git push # --all # origin master
