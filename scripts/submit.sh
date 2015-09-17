@@ -18,6 +18,7 @@ git clone git@github.com:wkoszek/book-programming-ruby.git
 cd book-programming-ruby
 #git remote add origin https://github.com/wkoszek/book-programming-ruby
 git checkout -B gh-pages
+git pull
 git push --set-upstream origin gh-pages
 #git branch --set-upstream-to=origin/gh-pages gh-pages
 #git pull
