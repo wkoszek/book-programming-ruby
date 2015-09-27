@@ -27,4 +27,4 @@ mkdir -p results
 mv ../out.${MODE} results/${TRAVIS_BUILD_NUMBER}.out.${MODE}
 git add results/${TRAVIS_BUILD_NUMBER}.out.${MODE}
 git commit -m ddddd
-git push # --all # origin master
+git push -f # --all # origin master
