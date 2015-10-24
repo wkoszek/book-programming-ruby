@@ -16,11 +16,15 @@ ssh-add book-programming-ruby.key
 
 git clone git@github.com:wkoszek/book-programming-ruby.git
 cd book-programming-ruby
+#git remote add origin https://github.com/wkoszek/book-programming-ruby
 git checkout -B gh-pages
+#git push --set-upstream origin gh-pages
+#git pull
+#git branch --set-upstream-to=origin/gh-pages gh-pages
+#git pull
 
 mkdir -p results
 mv ../out.${MODE} results/${TRAVIS_BUILD_NUMBER}.out.${MODE}
 git add results/${TRAVIS_BUILD_NUMBER}.out.${MODE}
-git commit -m "Travis out.${MODE} build ${TRAVIS_BUILD_NUMBER}"
-#git remote add origin https://github.com/wkoszek/book-programming-ruby
-git push --all # origin master
+git commit -m ddddd
+git push -f # --all # origin master
