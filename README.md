@@ -41,3 +41,8 @@ license.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/wkoszek/book-programming-ruby/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+
+# Author
+
+- Wojciech Adam Koszek, [wojciech@koszek.com](mailto:wojciech@koszek.com)
+- [http://www.koszek.com](http://www.koszek.com)
