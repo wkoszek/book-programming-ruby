@@ -21,3 +21,6 @@ script:
 - ./report.rb out.${MODE}
 after_script:
 - scripts/submit.sh
+branches:
+  only:
+    - master
