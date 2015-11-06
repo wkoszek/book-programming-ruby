@@ -19,8 +19,10 @@ git clone git@github.com:wkoszek/book-programming-ruby.git
 cd book-programming-ruby
 git checkout -b gh-pages --track origin/gh-pages
 
+OUT=results/${TRAVIS_BUILD_NUMBER}.${RUBY_VERSION}.${MODE}.out
+
 mkdir -p results
-mv ../out.${MODE} results/${TRAVIS_BUILD_NUMBER}.${RUBY_VERSION}.${MODE}.out
-git add results/${TRAVIS_BUILD_NUMBER}.out.${MODE}
+mv ../out.${MODE} $OUT
+git add $OUT
 git commit -m "New report `date`"
 git push origin gh-pages
