@@ -4,6 +4,7 @@ addons:
     packages:
     - coreutils
 rvm:
+- 2.4.0
 - 2.0.0
 - 1.8
 - 1.9.3
